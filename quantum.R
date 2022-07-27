@@ -39,7 +39,7 @@ priming.dat$prime_setsize_sw  <- NA
 priming.dat$target_links_sw <- NA
 priming.dat$target_setsize_sw <- NA
 
-##caution: run time is really long, ~ 1-5 min per iteration 
+##caution: run time is really long
 for (i in 1:nrow(priming.dat)) {
   prime = priming.dat$prime[i]
   target = priming.dat$target[i]
