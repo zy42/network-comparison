@@ -97,8 +97,8 @@ write.csv(strength.dat,"strength_sw.csv",row.names=FALSE)
 write.csv(connection.dat,"connectivity_sw.csv",row.names=FALSE)
 
 
-##repeat for dir_bar_50
-networkobj = dir_bar_50.g 
+##repeat for dir_bar50
+networkobj = dir_bar50.g 
 
 for (i in 1:length(priming_words)){
   source = priming_words[i]
