@@ -46,7 +46,7 @@ get_associates <- function(target,networkobj){
   output <- data.frame(source = rep(target,length(associates)),associate = associates)
   
   associate_ti =  apply(output,1,function(x) if_edge(x[1],x[2],networkobj,"ti")) #target to associate
-  associate_it =  apply(output,1,function(x) if_edge(x[1],x[2],networkobj,"it")) #target to associate
+  associate_it =  apply(output,1,function(x) if_edge(x[1],x[2],networkobj,"it")) ##associate to target
   output$S_ti = associate_ti
   output$S_it = associate_it
   }
